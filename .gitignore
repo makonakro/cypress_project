@@ -1,0 +1,6 @@
+cypress.env.json
+.nvmrc
+.DS_Store
+videos/
+screenshots/
+node_modules/
