@@ -71,7 +71,9 @@ describe('Work with board', () => {
     cy.get('[data-cy="image-attachment"]').should('contain.text', 'Download')
     cy.get('[data-cy="image-attachment"]').should('contain.text', 'Delete')
     })
-  it.skip('Move created card in new column' , () => {
+  it.skip('Move created card in new column' , () => { 
+    // Test skipped because of mouse interaction works as not expected and described in cypress docs,
+    // needs more time to investigate the solution
     BoardsPage.openBoard(boardName)
     BoardPage.createAnotherList('second list')
     cy.get('[data-cy="card"]').trigger('mousedown', { button: 0, clientX: 120, clientY: 160} );
